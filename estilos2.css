@@ -1,0 +1,343 @@
+*{
+    margin: 0; /*MARGEN EN 0*/
+    padding: 0; /* PADDING EN 0*/
+    border: 0;  /*BORDES EN 0*/
+    font-size: 100%; /*TAMAÑO DE TEXTO*/
+    vertical-align: baseline; /*ALINEADO VERTICAL*/
+}
+
+body {
+    text-align: center; /*TODOS LOS TEXTOS DEL BODY EN EL CENTRO*/
+    font-family: sans-serif; /*TIPO DE LETRA*/
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: right; /*EL DIV DE NAVEGACIÓN  QUIERO QUE ESTÉ A LA DERECHA*/
+    height: 60PX; /*altura del div 63px*/
+    background: rgb(0, 0, 0); /*COLOR DE FONDO*/
+    position: fixed; /*ME PERMITE QUE EL DIV ESTE ANCLADO MIENTRAS HAGO SCROLL A LA PAGINA*/
+    width: 100%; /*ANCHO DEL DIV*/
+    z-index: 100%; /*SOBRE POSICION DE LOS ELEMENTOS*/
+}
+
+.navbar{
+    width: 50%;
+    height: 100px; /*ALTO DEL NAVEGADOR*/
+    display: flex;
+    margin-right: 10px; /*SEPRARACIÓN DE LOS ENLACES DE LA MARGEN DERECJA 10PX*/
+    text-align: right;
+    
+}
+
+.navbar a{ /*ESTILOS PARA LOS ENLACES O BOTONES DE LA BARRA DE NAVERGACIÓN*/
+    display: block;
+    padding: 35px 20px;
+    color:bisque; /*COLOR DE LA LETRA DEL BOTON*/
+    text-decoration: none; /*SIN LINEA EN EL ENLACE*/
+    text-transform: uppercase; /*LAS LETRAS VAN A SER TOPAS MAYUSCULAS*/
+    font-size: 20px; /*TAMAÑO DE LA LETRA*/
+
+}
+
+.navbar a:hover{ /*EL :HOVER ME SIRVE PARA MODIFICAR SEÑALADOR DE LINK O BOTON*/
+    background: rgb(133, 17, 55); /*AGREGO COLOR CUANDO ESTE ENCIMA DEL LINK*/
+}
+.h3{
+    font-size: 18px;
+    
+}
+
+.h3-1{
+    color: bisque;
+    text-decoration: none;
+}
+
+.main{
+    width: 100%;
+    height: calc(200vh - 100); /*CALCULO EL 100 DE MI PANTALLA EN VH - LOS 100PX DEL NAV*/
+    display: flex; /*NO ME DEJA QUE LAS CAJAS SE APLIEN DE PARA ABAJO*/
+}
+
+.section{
+    display: block;
+    justify-content: center;
+    /*background:url(img/descarga.gif) no-repeat center rgb(17, 26, 73) ; /*PONGO IMAGEN AL HEADER, EL NO REPEAT CENTER ES PARA QUE QUEDE CENTRADO*/
+    background: url(img/fondo.jpg);
+    background-size: cover; /*EL TAMANO DE MI FONDO*/
+    padding: 100px 0;
+    width: 48%;
+    height: 150vh;
+
+}
+.section pre{
+    text-align: start;
+    color: aliceblue;
+
+}
+.box-container2 .pre-bio{
+    color: rgb(25, 27, 95);
+    text-align: center;
+    
+}
+.box-container2 .box i{
+    padding: 1px;
+    color: rgb(133, 17, 55);
+    background: #171717;
+    text-align: center;
+    border-radius: 20%;
+    line-height: 22px;
+
+}
+.p1{
+  color: bisque;
+  background: black;
+  padding: 10px;
+  border-radius: 10%;
+
+}
+
+.p2{
+    color: bisque;
+    background: black;  
+    padding: 10px;
+    border-radius: 10%;
+
+}
+.title{
+    margin-bottom: 20px; /*ESPACIO DEL TITULO HACIA ABAJO*/
+    font-size: 50px; /*TAMAÑO DE LA LETRA*/
+    font-weight: 600px; /*GROSOR DE LA LETRA*/
+    text-transform: uppercase; /*TODO MAYUSCULA*/
+    color: rgb(45, 144, 201);
+
+}
+.contend{
+    height: 70vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; /*CONTENIDO EN EL CENTRO*/
+    align-items: center;
+
+}
+.box-container2{
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    flex-wrap: wrap;
+}
+
+.box-container2 .box{
+    width: 590px;
+    padding-bottom: 20px;
+    text-align: center; /*LO QUE CONTIENE EL DIV EL CENTRO*/
+    box-shadow: 0 5px #171717; /*SOMBRA DEBAJO DEL DIV*/
+    background: rgb(45, 144, 201); /*FONDO DEL DIV, EN ESTE CASO DE LAS FOTOS*/
+    margin: 20px 20px;
+    border-radius: 15%;
+    margin-top: 20px;
+
+}
+
+.box-container2 .box-2{
+    width: 100px;
+    height: 50px;
+    padding-bottom: 20px 20px;
+    text-align: center; /*LO QUE CONTIENE EL DIV EL CENTRO*/
+    box-shadow: 0 5px #171717; /*SOMBRA DEBAJO DEL DIV*/
+    background: #171717; /*FONDO DEL DIV, EN ESTE CASO DE LAS FOTOS*/
+    margin: 10px 10px;
+    border-radius: 15%;
+    text-decoration: none;
+    box-shadow: 0 5px rgb(133, 17, 55);
+
+}
+
+.box-container2 .box-2 i{
+   color: beige;
+   font-size: 30px;
+   text-decoration: none;
+
+}
+
+.box-container2 .box img{ /*ESTILOS PARA LA IMAGEN DE NOSTROS*/
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 50%; /*REDONDEA LA IMAGEN*/
+    margin-top: 12px; /*ME CENRA LA IMAGEN EN EL CUADRO*/
+    border: 6px solid rgb(133, 17, 55); /*BORDE DE LA IMAGEN SOLIDO */
+}
+
+.anside{
+    display: block;
+    justify-content: center;
+    background:rgba(255, 255, 255, 0.651) ; /*PONGO IMAGEN AL HEADER, EL NO REPEAT CENTER ES PARA QUE QUEDE CENTRADO*/
+    background-size: cover; /*EL TAMANO DE MI FONDO*/
+    width: 52%;
+    height: 150vh;
+    padding: 100px 0;
+}
+
+.box-container3{
+    display: flex;
+    justify-content: center;    
+    padding-top: 2px;
+    flex-wrap: wrap;
+}
+
+.box-container3 .box{
+    width: 590px;
+    padding-bottom: 0px;
+    text-align: left; /*LO QUE CONTIENE EL DIV EL CENTRO*/
+    box-shadow: 0 5px rgb(0, 0, 0, .3); /*SOMBRA DEBAJO DEL DIV*/
+    background: #171717; /*FONDO DEL DIV, EN ESTE CASO DE LAS FOTOS*/
+    margin: 5px 5px;
+    color: aliceblue;
+    
+}
+
+.box-container3 i{
+
+    color: rgb(133, 17, 55);
+    
+}
+
+.h4{
+    font-size: 16px;
+    color:rgb(43, 177, 255);
+    margin-left: 10px;
+    margin-top: 5px;
+
+}
+.h5{
+    font-size: 16px;
+    color:rgb(133, 17, 55);
+    background: #171717;
+    border-radius: 20%;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.title2{
+    margin-bottom: 12px; /*ESPACIO DEL TITULO HACIA ABAJO*/
+    font-size: 30px; /*TAMAÑO DE LA LETRA*/
+    font-weight: 800px; /*GROSOR DE LA LETRA*/
+    text-align: center ;
+    text-transform: uppercase; /*TODO MAYUSCULA*/
+    color: black;
+
+}
+
+.box-container4{
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    flex-wrap: wrap;
+}
+
+.box-container4 .box{
+    width: 590px;
+    text-align: left; /*LO QUE CONTIENE EL DIV EL CENTRO*/
+    box-shadow: 0 5px rgb(0, 0, 0, .3); /*SOMBRA DEBAJO DEL DIV*/
+    background: #6f8a8b; /*FONDO DEL DIV, EN ESTE CASO DE LAS FOTOS*/
+    margin: 0px 0px;
+    margin-top: 0px 0px;
+    color: aliceblue;
+ 
+}
+
+.pre{
+    justify-content: center;
+    color: black;
+    
+}
+
+.section2{
+    display: block;
+    justify-content: center;
+    background: black;
+    background-size: cover; /*EL TAMANO DE MI FONDO*/
+    height: 650px;
+
+}
+
+.footer{
+    background:rgb(45, 144, 201);
+    height: 250px;
+}
+
+.title3{
+    text-align: center;
+    color: rgb(45, 144, 201);
+    margin-bottom: 20px; /*ESPACIO DEL TITULO HACIA ABAJO*/
+    font-size: 30px; /*TAMAÑO DE LA LETRA*/
+    font-weight: 600px; /*GROSOR DE LA LETRA*/
+    text-transform: uppercase; /*TODO MAYUSCULA*/
+
+}
+.box-container5{
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    flex-wrap: wrap;
+
+}
+
+.box-container5 .box{
+    width: 80%;
+    text-align: center; /*LO QUE CONTIENE EL DIV EL CENTRO*/
+    box-shadow: 0 5px rgb(0, 0, 0, .3); /*SOMBRA DEBAJO DEL DIV*/
+    background: none;
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    color: aliceblue;
+ 
+}
+
+.h6{
+    color: white;
+    background: none;
+    text-align: left;
+    font-size: 20px;
+}
+.pre2{
+    color: beige;
+    font-size: 16px;
+    text-align: left;
+}
+
+.box-container5 i{
+
+    color: rgb(133, 17, 55);
+    
+}
+.p3{
+    font-size: 15px;
+}
+
+.box-container6 i{
+    color: rgb(133, 17, 55);
+    font-size: 20px;
+    text-align: center;
+    
+
+}
+
+.box-contact{
+    color: black;
+    font-size: 20px; /*TAMAÑO DE LA LETRA*/
+    font-weight: 700px; /*GROSOR DE LA LETRA*/
+    text-align: center;
+
+}
+
+section[id]{ /*para que cuando de click en el boton de barra de navegación no se me sobreponga*/
+    scroll-margin-top: 100px;
+}
+
+html{ /*el escroll de direccionamiento sea mas lento*/
+    scroll-behavior: smooth;
+}
